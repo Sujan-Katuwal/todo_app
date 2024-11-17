@@ -1,0 +1,11 @@
+<h1>Update Task Status</h1>
+<form method="post">
+    {% csrf_token %}
+    <label>Status:</label>
+    <select name="progress_status">
+        <option value="Pending">Pending</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Completed">Completed</option>
+    </select>
+    <button type="submit">Update</button>
+</form>
